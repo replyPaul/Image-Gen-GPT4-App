@@ -5,6 +5,5 @@ openai
 rembg
 langchain
 streamlit
-
-
+streamlit_extras
 
