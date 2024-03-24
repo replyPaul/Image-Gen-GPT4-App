@@ -17,10 +17,8 @@ def recycle():
 def imgVAR3():
     st.markdown("## Draw Image :rainbow[Variation] ⚛️")
     #st.subheader("✨ Generate upto 4 numbers of synthetic variations against your uploaded Image ❄")
-    #st.info("""###### NOTE: you can download image by \
-   # right clicking on the image and select save image as option""")
     
-
+    
     with st.form(key='form'):
         uploaded_file = st.file_uploader("Choose an image file", type=["jpg", "png", "jpeg"])
         size = st.selectbox('Select size of the images', 
