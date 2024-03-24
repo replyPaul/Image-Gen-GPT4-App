@@ -1,0 +1,23 @@
+[theme]
+base="dark"
+
+gatherUsageStats = false
+
+# screens and components. Examples of widgets using this color are st.slider and st.checkbox.
+primaryColor = "#799933"
+
+# Background color for the container.
+backgroundColor = "#6351b1"
+
+# Using as the background for most widgets
+secondaryBackgroundColor =  "#8a7ed1"
+
+
+# Font color for the page.
+#textColor = "#6e7074" # grey
+textColor = "#f4f4f9"
+
+# Font family (serif | sans serif | mono) for the page. Will not impact code areas.
+# Default: "sans serif"
+font = "monospace"
+
