@@ -1,9 +1,9 @@
 notebook
 ipywidgets
+python-dotenv
 tqdm
 openai
 rembg
 langchain
 streamlit
 streamlit_extras
-

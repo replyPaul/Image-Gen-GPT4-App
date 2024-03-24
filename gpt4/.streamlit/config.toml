@@ -12,9 +12,7 @@ backgroundColor = "#6351b1"
 # Using as the background for most widgets
 secondaryBackgroundColor =  "#8a7ed1"
 
-
-# Font color for the page.
-#textColor = "#6e7074" # grey
+# Font color
 textColor = "#f4f4f9"
 
 # Font family (serif | sans serif | mono) for the page. Will not impact code areas.

@@ -4,6 +4,7 @@ from src.imgVAR3 import imgVAR3
 import openai
 import os
 
+
 # Retrieve the API key from the environment variable
 api_key = os.environ.get("OPENAI_API_KEY")
 
@@ -40,8 +41,8 @@ st.markdown(
     """,
         unsafe_allow_html=True,
     )
-st.markdown("##### 👼 An Interactive Child Like Artist who draws new images 🎨")
-st.write("a GPT4 powered app for neural network model to generate pics - **Paul Biswa**")
+st.markdown("##### 👼 An Interactive AI Child Artist who can draw new images and synthetic variations 🎨")
+st.write("a GPT4 powered app using neural network model capabilities - **Paul Biswa**")
 
 
 #added by PaulB to chnage the default hyoperlink colors

@@ -15,13 +15,7 @@ def recycle():
 
 def imGEN2():
     st.markdown("##  Draw :rainbow[New Images]  :rainbow: :potted_plant: ")
-    st.write(""" examples: Kids Enjoying Holi  OR  Sketch of Einstein  OR Panda Eating""")
-    st.write(""" ***Generate a realistic depiction of a modern kitchen with sleek appliances, marble countertops, and natural light streaming in through windows***.  OR """)
-    st.write(""" Make an illustration of a cat playing chess against a panda. """)
-    #st.subheader("Draw upto 4 numbers of new Images using your creative prompts :potted_plant: ❄")
-    #st.info("""###### NOTE: you can download image by \
-    #right clicking on the image and select save image as option""")
-
+    
     with st.form(key='form'):
         prompt = st.text_input(label='Type ur text request for image generation')
         size = st.selectbox('Select size of the images', 
@@ -30,7 +24,6 @@ def imGEN2():
         submit_button = st.form_submit_button(label='✨ Show your magic ✨ ', type="primary", use_container_width=False)
 
     if submit_button:
-        recycle()
         if prompt:
             response = client.images.generate(prompt = prompt,
             model="dall-e-2",
@@ -43,3 +36,11 @@ def imGEN2():
 
             st.image(image_url, caption=f"Generated image: {0+1}",
                          use_column_width=True)
+        recycle()
+    
+    st.write(""" Few examples: \n\n Kids Enjoying Holi  \n\n  Sketch of Albert Einstein  \n\n Panda Eating with baby panda \n\n Make an illustration of a cat playing chess against a robot.""")
+    st.write(""" Generate a realistic depiction of a modern kitchen with sleek appliances, marble countertops, and natural light streaming in through the windows. """)
+    
+    #st.subheader("Draw upto 4 numbers of new Images using your creative prompts :potted_plant: ❄")
+    #st.info("""###### NOTE: you can download image by \
+    #right clicking on the image and select save image as option""")
